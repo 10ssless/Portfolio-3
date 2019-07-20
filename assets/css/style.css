@@ -19,6 +19,10 @@ a{
     text-decoration: none;
     color: white;
 }
+a:hover{
+    text-decoration: none;
+    color: rgb(164, 187, 213);
+}
 .name {
     font-family: custom;
     position: fixed;
@@ -75,11 +79,15 @@ nav {
     transition-property: text-transform;
     transition-duration: 1s;
 }
+.tag{
+    color: rgba(107, 255, 124, 0.192)
+}
 
 .nav-item:hover {
     /* color: lightblue; */
     color: rgb(215, 179, 199);
 }
+
 
 .ticker {
     flex-wrap: wrap;
@@ -127,12 +135,78 @@ nav {
     /* transform: rotateX(24deg); */
     z-index: 3;
 }
-.center- {
+
+.side {
+    position: absolute;
+    right: 30px;
+    top: 48%;
+    width: 100%;
+    height: 400px;
+    background: rgba(240, 128, 128, 0.392);
+    color: white;
+    font-size: 18px;
     overflow: scroll;
-    white-space: nowrap;
-    /* transform-origin: 50% 100%; */
-    transform: perspective(1000px) rotateX(0deg);
-    /* transform: rotateX(24deg); */
-    z-index: 3;
+    white-space: normal;
+    padding: 10px;
+
 }
 
+
+#self,
+#moodi-cover,
+#rpg-cover,
+#nyt-cover,
+#art-cover,
+#contact-cover
+{
+    width: 100%;
+    height: auto;
+}
+
+.bio-img,
+.moodi-img,
+.rpg-img,
+.nyt-img,
+.art-img,
+.contact-img
+{
+    margin: 30px;
+    padding:25px;
+    /* background-image: url("../images/habitat.jpg");
+    background-repeat: none;
+    background-size: cover; */
+}
+
+.bio-name,
+.moodi-name,
+.rpg-name,
+.nyt-name,
+.art-name,
+.contact-name
+{
+    position: absolute;
+    margin: 30px;
+    padding:25px;
+    top: 100px;
+    left: -70px;
+    font-family: custom;
+
+}
+
+
+input{
+    width:90%;
+    background: none;
+    border:none;
+    border-bottom: 1px solid white;
+}
+
+button{
+    background:none;
+    border:none;
+}
+button:hover{
+    background:none;
+    border:none;
+    color: white;
+}

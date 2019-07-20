@@ -1,84 +1,156 @@
+var about = {
+    img: "../images/habitat.jpg",
+}
+
+
 $(document).ready(function(){
     $(".stuff").hide()
     $(".center-select").hide()
+    $(".side").hide()
     $(".center-scroll").hide()
     $(".name").hide()
     $("nav").hide()
 
-    var intro = ["you dont even kno","but you gon learn","pace yourself","$tay fro$tyyy©"]
-    var timer,timer2;
-    // $(".name").click(function(){
-    //     // clearInterval(timer);
-    //     timer = setInterval(function(){
-    //         switch(j){
-    //             case 0:
-    //                 $(".center").text(intro[j]).fadeToggle(2000).delay(1000).fadeToggle(2000);
-    //                 j = 1
-    //                 break;
-    //                 case 1:
-    //                     $(".center").text(intro[j].substring(8)).fadeToggle(2000).delay(1000).fadeToggle(2000);
-    //                     $(".name").text(intro[j].substring(0,8)).hide().fadeToggle(2000).delay(1000).fadeToggle(2000);
-    //                 j = 2
-    //                 break;
-    //             case 2:
-    //                 // $(".center").text(intro[j]).fadeToggle(2000).delay(1000).fadeToggle(2000);
-    //                 $(".sound").text(intro[j].substring(0,4)).fadeToggle(2000).delay(1000).fadeToggle(2000);
-    //                 $(".art").text(intro[j].substring(5,9)).fadeToggle(2000).delay(1000).fadeToggle(2000);
-    //                 $(".code").text(intro[j].substring(9,13)).fadeToggle(2000).delay(1000).fadeToggle(2000);
-    //                 j = 3
-    //                 break;
-    //             case 3:
-    //                 $(".name").text("zubin mulji").fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(200).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(200).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(200).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(20).fadeToggle(300).fadeToggle(1000).fadeToggle(300).fadeToggle(1000).fadeToggle(300).fadeToggle(1000);                    
-    //                 j = 0
-    //                 clearInterval(timer)
-    //                 break;
-    //         }
-    //     }, 5500)
-    // })
+    // ABOUT ME 
+    $("#center-1").click(function(){
+        $(".bio").show()
+        $(".moodi").hide()
+        $(".rpg").hide()
+        $(".nyt").hide()
+        $(".art").hide()
+        $(".contact").hide()
 
-
-
-    var clicked = false
-    $(".center").click(function(){
-        // $(".stuff").fadeToggle(1000)
-        $(".center-select").html("")
         $(".center-scroll").fadeOut(1000)
-        let select = $(this).html()
-        let div = $("<div>").addClass("center")
-        div.append(select)
-        $(".center-select").append(div)
         $(".name").fadeOut(1000)
         $("nav").fadeOut(1000)
         $(".center-select").delay(1000).fadeIn(1000)
-        clicked = true
+        $(".bio-text").delay(1500).fadeIn(1000)
+        
+    })
+
+    // MOODI 
+    $("#center-2").click(function(){
+        $(".bio").hide()
+        $(".moodi").show()
+        $(".rpg").hide()
+        $(".nyt").hide()
+        $(".art").hide()
+        $(".contact").hide()
+        
+        $(".center-scroll").fadeOut(1000)
+        $(".name").fadeOut(1000)
+        $("nav").fadeOut(1000)
+        $(".center-select").delay(1000).fadeIn(1000)
+        $(".moodi-text").delay(1500).fadeIn(1000)
+        $(".moodi-name").delay(1500).fadeIn(1000)
+        
     })
     
-    $(".center-select").click(function(){
+    // NYT 
+    $("#center-3").click(function(){
+        $(".bio").hide()
+        $(".moodi").hide()
+        $(".nyt").show()
+        $(".rpg").hide()
+        $(".art").hide()
+        $(".contact").hide()
+
+        $(".center-scroll").fadeOut(1000)
+        $(".name").fadeOut(1000)
+        $("nav").fadeOut(1000)
+        $(".center-select").delay(1000).fadeIn(1000)
+        $(".nyt-text").delay(1500).fadeIn(1000)
+        $(".nyt-name").delay(1500).fadeIn(1000)
+        
+    })
+   
+
+    // RPG 
+    $("#center-4").click(function(){
+        $(".bio").hide()
+        $(".moodi").hide()
+        $(".nyt").hide()
+        $(".rpg").show()
+        $(".art").hide()
+        $(".contact").hide()
+
+        $(".center-scroll").fadeOut(1000)
+        $(".name").fadeOut(1000)
+        $("nav").fadeOut(1000)
+        $(".center-select").delay(1000).fadeIn(1000)
+        $(".rpg-text").delay(1500).fadeIn(1000)
+        $(".rpg-name").delay(1500).fadeIn(1000)
+        
+    })
+    
+    // ART 
+    $("#center-5").click(function(){
+        $(".bio").hide()
+        $(".moodi").hide()
+        $(".nyt").hide()
+        $(".rpg").hide()
+        $(".art").show()
+        $(".contact").hide()
+
+        $(".center-scroll").fadeOut(1000)
+        $(".name").fadeOut(1000)
+        $("nav").fadeOut(1000)
+        $(".center-select").delay(1000).fadeIn(1000)
+        $(".art-text").delay(1500).fadeIn(1000)
+        $(".art-name").delay(1500).fadeIn(1000)
+        
+    })
+    
+    // $$$ 
+    $("#center-6").click(function(){
+        $(".bio").hide()
+        $(".moodi").hide()
+        $(".nyt").hide()
+        $(".rpg").hide()
+        $(".art").hide()
+        $(".contact").show()
+
+        $(".center-scroll").fadeOut(1000)
+        $(".name").fadeOut(1000)
+        $("nav").fadeOut(1000)
+        $(".center-select").delay(1000).fadeIn(1000)
+        $(".contact-text").delay(1500).fadeIn(1000)
+        $(".contact-name").delay(1500).fadeIn(1000)
+        
+    })
+
+    // $(".center-scroll").scroll(function () {
+    //     w = Math.floor($(".center-scroll").scrollTop());
+    //     $('.nav-item').css('color', '');
+    //     if (w <= $('#center-1').offset().top) {
+    //         $('.nav-item').css('color', 'white');
+    //         $('.nav-about').css('color', 'red');
+    //     } else if (w <= $('#center-2').offset().top) {
+    //         $('.nav-item').css('color', 'white');
+    //         $('.nav-code').css('color', 'red');
+    //     } else if (w <= $('#center-5').offset().top) {
+    //         $('.nav-item').css('color', 'white');
+    //         $('.nav-art').css('olor', 'red');
+    //     } else if (w <= $('#center-6').offset().top) {
+    //         $('.nav-item').css('color', 'white');
+    //         $('.nav-contact').css('color', 'red');
+    //     } 
+
+    // });
+
+    // reset to center-scroll
+    $(".center-select").click(function () {
         $(".center-select").fadeOut(1000)
+        $(".side").fadeOut(1000)
         $(".center-scroll").delay(1000).fadeIn(1000)
         $(".name").delay(2000).fadeIn(1500)
         $("nav").delay(2500).fadeTo(1500, 0.5)
 
     })
 
-    var x = 0;
-    $(".center-scroll").scroll(function(){
-        x += 10
+ 
 
-        // if(x < 200){
-        //     $(".sound").css("color", "red")
-        // }
-        // else if(x > 200){
-        //     $(".art").css("color", "red")
-        // }
-        // else {
-        //     $(".code").css("color", "red")
-
-        
-
-    })
-
-
+    // fade intro
     $(".name").delay(1000).fadeIn(1500)
     $("nav").delay(1500).fadeIn(1500)
     $(".center-scroll").delay(3000).fadeIn(1500)

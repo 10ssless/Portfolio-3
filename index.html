@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" href="assets/images/icon.png" type="16x16" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
     <link rel=stylesheet type="text/css" href="assets/css/style.css">
@@ -13,33 +15,172 @@
 <body>
     
     <div class="main-content">
+    
         <div class="ticker">
             <span class="ticker-fill"></span>
         </div>
-
+        
+        
         <nav>
-            <a href="#center-1"><span class="nav-item sound">sound</span></a>
-            <a href="#center-4"><span class="nav-item art">art</span></a>
-            <a href="#center-6"><span class="nav-item code">code</span></a>
-            <a href="#center-8"><span class="nav-item dollar">$$$$</span></a>
+            <a href="#center-1"><span class="nav-item nav-about">about</span></a>
+            <a href="#center-2"><span class="nav-item nav-code">code</span></a>
+            <a href="#center-5"><span class="nav-item nav-art">art</span></a>
+            <a href="#center-6"><span class="nav-item nav-contact">$$$$</span></a>
         </nav>
+            
+        
+        
 
-        <!-- <div class="stuff st-1">$$$$$$$$$$$</div> -->
-
+        
         <div class="name zm"><a href="index.html">Zubin Mulji</a></div>
-        <div class="name lam">10ssless_america</div>
-        <div class="name pm">polymath</div>
-        <div class="center-bio"></div>
-        <div class="center-select"></div>
+        <div class="name lam">web developer</div>
+        <div class="name pm">HTML.CSS.JS</div>
+
+        <div class="row center-select">
+            <div class="col-md-6">
+                <div class="center bio bio-img">
+                    <img src="assets/images/habitat.jpg" id="self">
+                </div>
+                
+                <div class="center moodi moodi-img">
+                    <img src="assets/images/moodi-cover.png" id="moodi-cover">
+                </div>
+                
+                <div class="center nyt nyt-img">
+                    <img src="assets/images/nyt-cover.png" id="nyt-cover">
+                </div>
+
+                <div class="center rpg rpg-img">
+                    <img src="assets/images/rpg-cover.png" id="rpg-cover">
+                </div>
+                
+                <div class="center art art-img">
+                    <img src="assets/images/tv.png" id="art-cover">
+                </div>
+                
+                <div class="center contact contact-img">
+                    <img src="assets/images/money.jpeg" id="contact-cover">
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <!-- BIO -->
+                <div class="bio bio-name">
+                    Zubin Mulji
+                </div>
+                <div class="side bio bio-text">
+                    <p>My name is Zubin Mulji and I have had a strange and exciting journey to becoming a 
+                        programmer. I started out at New York University-Stern
+                        School of Business studying math and finance. Pretty soon I had found out about another program at NYU,
+                        the Clive Davis
+                        Institute of Recorded Music. At the time, I was an electronic music producer and DJ on the side, and was
+                        presented with an opportunity
+                        to pursue my passion in a concrete way. So by winter break, I was working on my audition material, and
+                        by the end of
+                        the year was accepted as a new transfer student into the program.
+                    </p>
+                        
+                    <p>While working towards a BFA in Music Production, I also picked up a minor in Web Programming and
+                        Applications at NYU to
+                        find an outlet for my more technical interests. After graduating, I worked as a recording engineer in
+                        New York City music studios, working with singers, rappers, instrumentalists, etc. While the trade is
+                        more creative
+                        than technical, it taught me how to learn new skills quickly and how to work under pressure to meet a
+                        client's
+                        needs. 
+                    </p>
+                        
+                    <p>While the problem-solving element of my work was fun, I found myself missing the intellectual stimulation
+                        that I got in my
+                        calculus and coding classes. So I took a step back from my music work to focus my energy on becoming a
+                        skilled programmer,
+                        with hopes of writing new and innovative applications to find solutions for creatives and executives in
+                        music, entertainment,
+                        and beyond.
+                    </p>
+                </div>
+
+                <!-- MOODI -->
+                <div class="moodi moodi-name">
+                    Moodi
+                </div>
+                <div class="side moodi moodi-text">
+                    <p>Moodi is a minimalist image and sound-based relaxation application.</p><br>
+                    <p>Click on any name to go to a different sonic environment. Click a second sound to evoke an
+                        entirely new space.</p><br>
+                    <p> Explore the possibilities and find easter eggs as you listen and relax. </p><br>
+                    
+                    <br><br>
+                    <a href="https://10ssless.github.io/Project-Moodi/" target="_blank">try out the app</a>
+                </div>
+                
+                <!-- NYT -->
+                <div class="nyt nyt-name">
+                    New York Times
+                </div>
+                <div class="side nyt nyt-text">
+                    <p>Retrieving articles from the New York Times using an API. </p>
+                    <p>Search by keyword, section, and date published.</p>
+                    <br><br><br><br>
+                    <a href="https://10ssless.github.io/NYTimes-API/" target="_blank">try out the app</a>
+                </div>
+
+                <!-- RPG -->
+                <div class="rpg rpg-name">
+                    Player 1
+                </div>
+                <div class="side rpg rpg-text">
+                    <p>Player 1 is a legacy-style online role-playing game with a dark, War Games-style theme. </p>
+                    <p>Users select a character to play as and must battle their way through the remaining characters. Each character has their own Health Points, Attack Damage, and Counter-attack Damage. Attack points multiply with every move.</p><br>
+                    <p>Choose your opponents wisely.</p>
+                    
+                    <br><br>
+                    <a href="https://10ssless.github.io/Unit-4-Game/" target="_blank">try out the game</a>
+                </div>
+                
+                <!-- ART -->
+                <div class="art art-name">
+                    Art.wav
+                </div>
+                <div class="side art art-text">
+                    <p>Coming soon...</p>
+                    
+                    <br><br><br><br>
+                </div>
+                
+                <!-- CONTACT -->
+                <div class="contact contact-name">
+                    Contact
+                </div>
+                <div class="side contact contact-text">
+                    <p class="input-label">Name</p>
+                    <input type="text" name="fullname">
+                    <br>
+                    <p class="input-label">Email</p>
+                    <input type="email" name="email">
+                    <br>
+                    <p class="input-label" id="input-label-msg">Message</p>
+                    <input type="text" name="description" id="input-msg">
+                    <br><br>
+                    <button type="submit">Submit</button>
+                    
+                    <br><br><br><br>
+                </div>
+
+
+
+            </div>
+            
+        </div>
+        
         <div class="center-scroll">
-            <div class="center" id="center-1">you</div>
-            <div class="center" id="center-2">dont</div>
-            <div class="center" id="center-3">even</div>
-            <div class="center" id="center-4">know</div>
-            <div class="center" id="center-5">but</div>
-            <div class="center" id="center-6">you</div>
-            <div class="center" id="center-7">gon</div>
-            <div class="center" id="center-8">learn</div>
+            
+            <div class="center" id="center-1">me</div>
+            <div class="center" id="center-2">moodi<span class="tag">.app</span></div>
+            <div class="center" id="center-3">nyt<span class="tag">.app</span></div>
+            <div class="center" id="center-4">rpg<span class="tag">.game</span></div>
+        <div class="center" id="center-5">art<span class="tag">.wav</span></div>
+        <div class="center" id="center-6">$$$$</div>
         </div>
         
     </div>
