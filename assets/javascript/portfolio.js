@@ -144,7 +144,7 @@ $(document).ready(function(){
         $(".side").fadeOut(1000)
         $(".center-scroll").delay(1000).fadeIn(1000)
         $(".name").delay(2000).fadeIn(1500)
-        $("nav").delay(2500).fadeTo(1500, 0.5)
+        $("nav").delay(2500).fadeIn(1500)
 
     })
 

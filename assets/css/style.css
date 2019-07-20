@@ -15,6 +15,8 @@ body {
     color: white;
 
 }
+
+
 a{
     text-decoration: none;
     color: white;
@@ -135,6 +137,7 @@ nav {
     transform: perspective(1000px) rotateX(0deg);
     /* transform: rotateX(24deg); */
     z-index: 3;
+    height: 1000px;
 }
 
 .side {
@@ -151,6 +154,7 @@ nav {
     padding: 10px;
 
 }
+
 
 
 #self,
@@ -183,7 +187,8 @@ nav {
 .rpg-name,
 .nyt-name,
 .art-name,
-.contact-name
+.contact-name,
+.side-name
 {
     position: absolute;
     margin: 30px;
@@ -210,4 +215,25 @@ button:hover{
     background:none;
     border:none;
     color: white;
+}
+
+@media only screen and (max-width: 560px) {
+     
+    .center-select {
+        height: 1000px;
+    }
+
+
+    .side{
+        top: -70%;
+        left:50px;
+        width: 85%;
+        overflow:auto;
+        height:auto;
+    }
+
+    .side-name{
+        top: -130%;
+        left: 0px;
+    }
 }
