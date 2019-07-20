@@ -79,8 +79,9 @@ nav {
     transition-property: text-transform;
     transition-duration: 1s;
 }
+
 .tag{
-    color: rgba(107, 255, 124, 0.192)
+    color: rgba(107, 255, 124, 0.26)
 }
 
 .nav-item:hover {
