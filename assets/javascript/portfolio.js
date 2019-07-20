@@ -119,6 +119,10 @@ $(document).ready(function(){
         
     })
 
+    $(".center-scroll").scroll(function(){
+        $(".name").fadeOut(1000)
+    })
+
     // $(".center-scroll").scroll(function () {
     //     w = Math.floor($(".center-scroll").scrollTop());
     //     $('.nav-item').css('color', '');
